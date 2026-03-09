@@ -1,5 +1,16 @@
 import streamlit as st
 import numpy as np
+# ... alle anderen Imports
+
+# DAS MUSS HIER STEHEN (vor allem anderen!)
+st.set_page_config(page_title="KI Fundbüro", page_icon="🔍")
+
+# Erst danach dürfen andere st. Befehle kommen
+st.title("🔍 KI-Fundbüro")
+
+# Der Rest deines Codes (Modell laden, etc.)
+# ...import streamlit as st
+import numpy as np
 import os
 from PIL import Image, ImageOps
 from keras.models import load_model
