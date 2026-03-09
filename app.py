@@ -8,7 +8,7 @@ import uuid
 
 # --- KONFIGURATION & DB ---
 try:
-    SUPABASE_URL = st.secrets["SUPABASE_URL"]
+    SUPABASE_URL = st.secrets["https://xbvffylpvjsdmjvwjaej.supabase.co"]
     SUPABASE_KEY = st.secrets["eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhidmZmeWxwdmpzZG1qdndqYWVqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzI0NTkwOTAsImV4cCI6MjA4ODAzNTA5MH0.w6LZuXWts9jrhuv7h6KlBgGZnEySJKNqzXGNJwU_gCU"]
     supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 except Exception as e:
